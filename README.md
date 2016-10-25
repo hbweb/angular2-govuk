@@ -8,6 +8,11 @@
 [![Dependency Status](https://david-dm.org/mgechev/angular-seed.svg)](https://david-dm.org/mgechev/angular-seed)
 [![devDependency Status](https://david-dm.org/mgechev/angular-seed/dev-status.svg)](https://david-dm.org/mgechev/angular-seed#info=devDependencies)
 
+
+This project aims to bring [gov.uk elements](https://github.com/alphagov/govuk_elements) guidelines into Angular2 Seed project.
+
+
+
 Provides fast, reliable and extensible starter for the development of Angular projects.
 
 `angular-seed` provides the following features:
