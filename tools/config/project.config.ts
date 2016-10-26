@@ -12,7 +12,10 @@ export class ProjectConfig extends SeedConfig {
 
   constructor() {
     super();
-    // this.APP_TITLE = 'Put name of your app here';
+    this.APP_TITLE = 'Home Office';
+
+    // SCSS supported
+    this.ENABLE_SCSS = true;
 
     /* Enable typeless compiler runs (faster) between typed compiler runs. */
     // this.TYPED_COMPILE_INTERVAL = 5;
@@ -21,7 +24,10 @@ export class ProjectConfig extends SeedConfig {
     this.NPM_DEPENDENCIES = [
       ...this.NPM_DEPENDENCIES,
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
-      // {src: 'lodash/lodash.min.js', inject: 'libs'},
+      {src: 'lodash/lodash.min.js', inject: 'libs'},
+      {src: 'govuk_frontend_toolkit/javascripts/govuk_toolkit.js', inject: 'libs'},
+      {src: 'bootstrap-sass/assets/stylesheets/_bootstrap.scss', inject : true}
+  
     ];
 
     // Add `local` third-party libraries to be injected/bundled.
@@ -33,9 +39,7 @@ export class ProjectConfig extends SeedConfig {
 
     /* Add to or override NPM module configurations: */
     // this.mergeObject(this.PLUGIN_CONFIGS['browser-sync'], { ghostMode: false });
-
-    // SCSS supported
-    this.ENABLE_SCSS = true;
+    
   }
 
 }
